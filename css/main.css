@@ -32,6 +32,31 @@
         width: 95%;
     }
 }
+@media (max-width: 768px) {
+    .definicion__container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 0 1em;
+    }
+
+    .definicion__body {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    .definicion__img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .definicion__text {
+        max-width: 100%;
+        line-height: 1.5;
+        padding: 0 0.5em;
+    }
+}
 
 /* 8. Mejorar el scroll en dispositivos móviles */
 html, body {
@@ -129,6 +154,8 @@ a{
 .menu nav ul li a:hover{
     color: rgb(209, 184, 25); /*Variable*/
 }
+
+
 
 .socialMedia a{
     margin: 0px 5px;
