@@ -1,5 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Normalize y ajustes responsive básicos */
+
+/* 1. Ajustes de caja y tipografía */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* 2. Eliminar márgenes y paddings por defecto */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Ajustar imágenes y medios */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 4. Ajustar tipografía para inputs y botones */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 5. Eliminar decoraciones de enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 6. Hacer que los contenedores no desborden en pantallas pequeñas */
+.container, .container-fluid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+/* 7. Responsive para textos y títulos */
+h1 {
+    font-size: 2.2rem;
+}
+h2 {
+    font-size: 1.7rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    .container, .container-fluid {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .hero__container {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    .hero__paragraph {
+        margin-left: 0;
+    }
+    .definicion__img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .definicion__main {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .definicion__icons {
+        width: 100%;
+        min-width: 0;
+    }
+    .questions__copy {
+        width: 95%;
+    }
+}
+
+/* 8. Mejorar el scroll en dispositivos móviles */
+html, body {
+    -webkit-overflow-scrolling: touch;
+}
 *{
     margin: 0;
     padding: 0;
