@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AF Asesoria Imagen</title>
+    <!--Icono página-->
+    <link rel="shortcut icon" href="./img/logo.png" type= "images/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -14,54 +16,56 @@
 
     <!--Header - Menu-->
 
-    <header class="hero">
-        <div class="container__header">
-            <div class="logo">
-                <a href="#">
-                    <img src="./img/logo.png" alt="AF Asesoria Imagen">
-                </a>
-            </div>
+  <header class="hero">
+  <!-- Navegación principal -->
+  <nav class="nav container">
+    <!-- Logo -->
+    <div class="nav__logo">
+      <h2 class="nav__title">
+        <img src="./img/logo.png" alt="AF Asesoría Imagen" width="40px">
+      </h2>
+    </div>
 
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="./conoceme.html">Conoceme</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <!-- <li><a href="./testimonios.html">Testimonios</a></li> -->
-                        <li><a href="./contactos.html">Contactos</a></li>
-                    </ul>
-                </nav>
-                <div class="socialMedia">
-                    <a href="https://www.facebook.com/ImageandArtistProduction">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/@ana.febres">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@njimagenymoda?_t=ZM-8xXInfJGbyP&_r=1">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                    <a href="https://t.me/ImagenandFashionTrends">
-                        <i class="bi bi-telegram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <section class="hero__container container">
-            <h1 class="hero__title">Ana Febres</h1>
-            <p class="hero__paragraph">Asesoría de Imagen tipo Kibbe,
-color y esencia.
-“La ropa tiene que adaptarse a la
-persona, no la persona a la ropa.”
-            
-            </p>
-            <a href="#content-section-5" class="cta">Empecemos</a>
-        </section>
-    </header>
+    <!-- Menú de navegación -->
+    <ul class="nav__link nav__link--menu">
+      <li class="nav__items"><a href="./index.html" class="nav__link">Inicio</a></li>
+      <li class="nav__items"><a href="./conoceme.html" class="nav__link">Conóceme</a></li>
+      <li class="nav__items"><a href="./servicios.html" class="nav__link">Servicios</a></li>
+      <li class="nav__items"><a href="./testimonios.html" class="nav__link">Testimonios</a></li>
+      <li class="nav__items"><a href="./contactos.html" class="nav__link">Contactos</a></li>
+      <!-- Botón para cerrar menú en móviles -->
+      <img src="./img/cancel.svg" class="nav__close" >
+    </ul>
+
+    <!-- Botón para abrir menú en móviles -->
+    <div class="nav__menu">
+      <img src="./img/menu.svg" class="nav__img" >
+    </div>
+  </nav>
+
+  <!-- Contenido principal del hero -->
+  <section class="hero__container container">
+    <h1 class="hero__title">Ana Febres</h1>
+    <p class="hero__paragraph">
+      Asesoría de Imagen tipo Kibbe, color y esencia.<br>
+      “La ropa tiene que adaptarse a la persona, no la persona a la ropa.”
+    </p>
+    <a href="#inicio" class="cta">Empecemos</a>
+
+    <!-- Redes sociales -->
+    <div class="socialMedia mt-4">
+      <a href="https://www.facebook.com/ImageandArtistProduction"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/@ana.febres"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.tiktok.com/@njimagenymoda?_t=ZM-8xXInfJGbyP&_r=1"><i class="bi bi-tiktok"></i></a>
+      <a href="https://t.me/ImagenandFashionTrends"><i class="bi bi-telegram"></i></a>
+    </div>
+  </section>
+  </header>
+
 
     <main>
 
-    <section id="content-section-5" class="bg-white py-5">
+    <section id="inicio" class="bg-white py-5">
   <div class="container">
     <div class="row">
       <!-- Texto -->
@@ -74,7 +78,7 @@ llevarlas de la mano para que aprendas a cuidarte, para que se sientan
 completas. 
         </p>
         <p class="text-secondary text-justify">
-         Que puedan tomar las riendas de su imagen y su comunicación.
+        Que puedan tomar las riendas de su imagen y su comunicación.
 Porque sabemos que desean sentirte ellas mismas y que pueden demostrarse
 amor propio y un cuidado a ti misma real y respetando cada vez más su
 cuerpo y mente.
@@ -188,9 +192,9 @@ cuerpo y mente.
 
     <button type="button" class="whatsapp btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Contáctanos por WhatsApp"><a href="https://wa.me/593992655666"><img src="./img/whatsapp.png" width="75px"></a></button>
 
-    
+    <script src="./js/menu.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-     <script>
+    <script>
 document.addEventListener('DOMContentLoaded', function () {
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
   tooltipTriggerList.forEach(function (tooltipTriggerEl) {
@@ -198,5 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+
+
 </body>
 </html>

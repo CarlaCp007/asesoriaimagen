@@ -1,64 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media (max-width: 768px) {
-    html {
-        font-size: 15px;
-    }
-    .container, .container-fluid {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-    .hero__container {
-        align-items: center;
-        text-align: center;
-        margin-left: 0;
-    }
-    .hero__paragraph {
-        margin-left: 0;
-    }
-    .definicion__img {
-        width: 100%;
-        max-width: 300px;
-    }
-    .definicion__main {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-    .definicion__icons {
-        width: 100%;
-        min-width: 0;
-    }
-    .questions__copy {
-        width: 95%;
-    }
-}
-@media (max-width: 768px) {
-    .definicion__container {
-        grid-template-columns: 1fr;
-        gap: 1em;
-        padding: 0 1em;
-    }
 
-    .definicion__body {
-        grid-template-columns: 1fr;
-        gap: 2em;
-    }
-
-    .definicion__img {
-        width: 100%;
-        max-width: 250px;
-        margin: 0 auto;
-        justify-content: center;
-    }
-
-    .definicion__text {
-        max-width: 100%;
-        line-height: 1.5;
-        padding: 0 0.5em;
-    }
-}
-
-/* 8. Mejorar el scroll en dispositivos móviles */
+/* Mejorar el scroll en dispositivos móviles */
 html, body {
     -webkit-overflow-scrolling: touch;
 }
@@ -114,48 +57,6 @@ a{
     align-items: center;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.logo img{
-    width: 75px;
-}
-
-.menu{
-    display: flex;
-    align-items: center;
-}
-
-.menu nav{
-    margin: 0px 20px;
-}
-
-.menu nav ul{
-    display: flex;
-}
-
-.menu nav ul li{
-    list-style: none;
-    margin: 20px 16px;
-}
-
-.menu nav ul li a{
-    color: whitesmoke; /*Variable*/
-    font-size: 16px; /*Variable*/
-    position: relative;
-    transition: all 300ms;
-    text-shadow: #0000008c 0px 0px 8px;
-}
-
-.menu nav ul li a:hover{
-    color: rgb(209, 184, 25); /*Variable*/
-}
-
-
 
 .socialMedia a{
     margin: 0px 5px;
@@ -195,38 +96,86 @@ a{
     z-index: -1;
 }
 
-/* Contenedor de la cabecera principal */
-.hero__container {
-    width: 85%;
-    height: 80%;
+/* Nav */
+
+.nav {
+    padding: 2% 0%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__title {
+    font-weight: 400;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 10px 15px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+    color: aliceblue;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.nav__link:hover{
+    color: rgb(87, 185, 243);      /* Cambia el color al pasar el cursor */
+    transform: scale(1.1);  /* Aumenta ligeramente el tamaño */
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+
+.nav__close {
+    display: var(--show, none);
+}
+
+/* Hero container */
+
+.hero__container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+    line-height: 30px;
 }
 
 .hero__title {
-    font-size: 45   px;
-    font-weight: 400;
-    margin-bottom: 16px;
+    font-size: 3rem;
+    line-height: 30px;
 }
 
-/* pendiente resizable */
 .hero__paragraph {
-    font-size: 18px;
-    margin-bottom: 0px;
-    margin-left: 30rem;
+    margin-bottom: 20px;
+    line-height: 30px;
 }
-
-.hero__cta {
-    padding: 12px 24px;
-    background-color: rgb(209, 184, 25);
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
 
 
 
@@ -466,5 +415,116 @@ overflow: hidden;
     margin: 10px 0;
 }
 
+@media (max-width:800px){
+    .nav__menu{
+        display: block;
+    }
 
+    .nav__link--menu{
+        position: fixed;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .nav__link--show{
+        --show: block;
+        opacity:1 ;
+        pointer-events: unset;
+        transition: 1s;
+    }
+
+    .nav__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    .container, .container-fluid {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .hero__container {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+    .hero__paragraph {
+        margin-left: 0;
+    }
+    .definicion__img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .definicion__main {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .definicion__icons {
+        width: 100%;
+        min-width: 0;
+    }
+    .questions__copy {
+        width: 95%;
+    }
+    .definicion__container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 0 1em;
+    }
+
+    .definicion__body {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    .definicion__img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .definicion__text {
+        max-width: 100%;
+        line-height: 1.5;
+        padding: 0 0.5em;
+    }
+}
+
+@media (max-width:600px){
+    .hero__title{
+        font-size: 2rem;
+    }
+
+    .hero__paragraph{
+        font-size: 1rem;
+    }
+
+    .subtitle{
+        font-size: 1.8rem;
+    }
+}
 
