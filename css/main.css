@@ -124,7 +124,7 @@ a{
 
 
 .nav__link:hover{
-    color: rgb(87, 185, 243);      /* Cambia el color al pasar el cursor */
+    color: rgb(243, 240, 87);      /* Cambia el color al pasar el cursor */
     transform: scale(1.1);  /* Aumenta ligeramente el tamaño */
 }
 
@@ -336,7 +336,7 @@ overflow: hidden;
 .questions__padding{
     padding: 0;
     transition: padding .3s;
-    border: 1px solid #5454D4;
+    border: 1px solid #766b24;
     border-radius: 6px;
     margin-bottom: 1.5rem;
 }
@@ -413,6 +413,26 @@ overflow: hidden;
 
 .comment__form button{
     margin: 10px 0;
+}
+
+/*Boton*/
+.cta {
+    display: inline-block;
+    background-color: #67650abe;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 23px;
+    border-color: transparent;
+}
+
+.cta:hover{
+    border-color: transparent;
+    border-radius: 32px;
+    background: rgb(223, 197, 26);
+    transition: 1s;
+    color: #3f3e3e;
 }
 
 @media (max-width:800px){

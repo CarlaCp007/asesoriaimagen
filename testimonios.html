@@ -14,50 +14,139 @@
 
     <!--Header - Menu-->
 
-    <header class="hero">
-        <div class="container__header">
-            <div class="logo">
-                <a href="#">
-                    <img src="./img/logo.png" alt="AF Asesoria Imagen">
-                </a>
-            </div>
+      <header class="hero">
+  <!-- Navegación principal -->
+  <nav class="nav container">
+    <!-- Logo -->
+    <div class="nav__logo">
+      <h2 class="nav__title">
+        <img src="./img/logo.png" alt="AF Asesoría Imagen" width="40px">
+      </h2>
+    </div>
 
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./conoceme.html">Conoceme</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./contactos.html">Contactos</a></li>
-                    </ul>
-                </nav>
-                <div class="socialMedia">
-                    <a href="https://www.facebook.com/ImageandArtistProduction">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/@ana.febres">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@njimagenymoda?_t=ZM-8xXInfJGbyP&_r=1">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                    <a href="https://t.me/ImagenandFashionTrends">
-                        <i class="bi bi-telegram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <section class="hero__container container">
-            <h1 class="hero__title">Ana Febres</h1>
-            <p class="hero__paragraph">Sé que deseas reconectar contigo misma, demostrarte amor propio y cuidar de tu cuerpo y mente con respeto y autenticidad; permiteme acompañarte en el camino para que aprendas a cuidarte, te sientas completa y tomes las riendas de tu imagen y comunicación.
-            
-            </p>
-            <a href="#Iniciar" class="cta">Empecemos</a>
-        </section>
-    </header>
+    <!-- Menú de navegación -->
+    <ul class="nav__link nav__link--menu">
+      <li class="nav__items"><a href="./index.html" class="nav__link">Inicio</a></li>
+      <li class="nav__items"><a href="./conoceme.html" class="nav__link">Conóceme</a></li>
+      <li class="nav__items"><a href="./servicios.html" class="nav__link">Servicios</a></li>
+      <li class="nav__items"><a href="./testimonios.html" class="nav__link">Testimonios</a></li>
+      <li class="nav__items"><a href="./contactos.html" class="nav__link">Contactos</a></li>
+      <!-- Botón para cerrar menú en móviles -->
+      <img src="./img/cancel.svg" class="nav__close" >
+    </ul>
+
+    <!-- Botón para abrir menú en móviles -->
+    <div class="nav__menu">
+      <img src="./img/menu.svg" class="nav__img" >
+    </div>
+  </nav>
+
+  <!-- Contenido principal del hero -->
+  <section class="hero__container container">
+    <h1 class="hero__title">Ana Febres</h1>
+    <p class="hero__paragraph">
+      Aún con inquietudes. No dudes en contactarnos.</p>
+    
+    <!-- Redes sociales -->
+    <div class="socialMedia mt-4">
+      <a href="https://www.facebook.com/ImageandArtistProduction"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/@ana.febres"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.tiktok.com/@njimagenymoda?_t=ZM-8xXInfJGbyP&_r=1"><i class="bi bi-tiktok"></i></a>
+      <a href="https://t.me/ImagenandFashionTrends"><i class="bi bi-telegram"></i></a>
+    </div>
+  </section>
+  </header>
 
     <main>
 
+        <div class="container mt-5">
+            <div class="tab-content">
+                <div class="tab-pane active" id="elemento1" role="tabpanel">
+                    <div class="row align-items-center">
+                    <div class="col-4">
+                        <img class="img-fluid img-thumbnail rounded" src="img/testimonio/elemento1.jpg" width="250rem" alt="">
+                    </div>
+                    <div class="col-8">
+                        <h4 class="lead">Susan Engel, Asesora Internacional</h4>
+                        <h2>"Gracias por determinar mi estilo de vestir!"</h2>
+                        <p>Muchas gracias por su excelente asesoramiento. Fue un trabajo profesional que me ayudó a establecer mi imagen.
+Para determinar mi imagen, un paso importante fue conocer mi forma de cuerpo.
+Y a partir de ello, hacerme recomendaciones concretas sobre formas, estilos y cortes de la prenda.
+Otro elemento, esencial fue establecer los colores que me quedan.
+Por último, gracias por determinar mi estilo de vestir.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="elemento2" role="tabpanel">
+                    <div class="row align-items-center">
+                    <div class="col-4">
+                        <img class="img-fluid img-thumbnail rounded" src="img/testimonio/elemento2.jpg" width="250rem" alt="">
+                    </div>
+                    <div class="col-8">
+                        <h4 class="lead">Rocío Reatiqui Técnica de campo - Municipio de Quito</h4>
+                        <h2>"Gracias por tu trabajo!"</h2>
+                        <p>Servicio profesional desarrollado en Imagen y Etiqueta, capacitando a mujeres vulnerables de los barrios de Toctiuco y San Juan. Fue un excelente aporte en el desarrollo de la seguridad, auto conocimiento; autoestima y crecimiento personal para los emprendedores beneficiarios del ADEL, zona centro.
+Gracias por tu trabajo.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="elemento3" role="tabpanel">
+                    <div class="row align-items-center">
+                    <div class="col-4">
+                        <img class="img-fluid img-thumbnail rounded" src="img/testimonio/elemento3.jpg" width="250rem" alt="">
+                    </div>
+                    <div class="col-8">
+                        <h4 class="lead">Liliana Suarez, Cantante, artista multifacética y chef</h4>
+                        <h2>"Excelente profesional en asesoría de imagen!"</h2>
+                        <p> Es una mujer muy educada, con valores, posee gran
+calidez humana, síganla en sus redes sociales tiene contenido de
+calidad, variado y muy interesante!
+Cambios de imagen profesionales Resultados asombrosos.
+Consulta gratuita.
+Grandes ofertas Resultados bonitos.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="elemento4" role="tabpanel">
+                    <div class="row align-items-center">
+                    <div class="col-4">
+                        <img class="img-fluid img-thumbnail rounded" src="img/testimonio/elemento4.jpg" width="250rem" alt="">
+                    </div>
+                    <div class="col-8">
+                        <h4 class="lead">Santiago Basantes - Estudiante y modelo</h4>
+                        <h2>"He sentido un cambio radical."</h2>
+                        <p>Me he sentido super bien con esta asesoría brindada. He sentido un cambio radical.
+Y me siento diferente al haber usado todas las técnicas en esta asesoría de imagen.
+Me siento muy satisfecho. Y muchas gracias por el apoyo.
+</p>
+                    </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="row">
+                <div class="offset-4 col-8"">
+
+                
+                <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+    <a class="nav-link active" id="elemento1" data-bs-toggle="tab" href="#elemento1" role="tab"><img class="img-fluid rounded" src="img/testimonio/elemento1.jpg" width="50rem" alt=""></a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" id="elemento2" data-bs-toggle="tab" href="#elemento2" role="tab"><img class="img-fluid rounded" src="img/testimonio/elemento2.jpg" width="50rem" alt=""></a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link " id="elemento3" data-bs-toggle="tab" href="#elemento3" role="tab"><img class="img-fluid rounded" src="img/testimonio/elemento3.jpg" width="50rem" alt=""></a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" id="elemento4" data-bs-toggle="tab" href="#elemento4" role="tab"><img class="img-fluid rounded" src="img/testimonio/elemento4.jpg" width="50rem" alt=""></a>
+    </li>
+
+</ul>
+        </div>
+                </div>
+        </div>
     </main>
 
     <footer class="footer">
